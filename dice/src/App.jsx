@@ -7,7 +7,7 @@ const App = () => {
     <main >
           <Header />
          <Tenzies/>
-         <button className="roll">Roll</button>
+         
         
      
     </main>

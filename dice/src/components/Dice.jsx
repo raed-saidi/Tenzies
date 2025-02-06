@@ -1,12 +1,15 @@
 import React from 'react'
+import { useState } from 'react'
+
 
 const Dice = (props) => {
-  return (
-<button className="Dice">
-    <h1>{props.number}</h1>
-    
-    
-</button>      )
+  const style= props.isHeld ? "on" : ""
+ 
+ return (
+    <button className={`Dice ${style}`} onClick={()=>props.hold(props.id)} id={props.id} > 
+        {props.nb} 
+    </button>      
+)
 }
 
 export default Dice
